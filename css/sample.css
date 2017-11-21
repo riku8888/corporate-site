@@ -252,14 +252,30 @@ div {
   margin: 0;
   letter-spacing: 0.2rem; }
 
+@media (min-width: 550px) {
+  #sub_cover {
+    padding: 80px 0; }
+
+  #sub_cover h2 {
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.2rem; } }
 #contents {
   padding-top: 20px; }
 
+@media (min-width: 550px) {
+  #contents {
+    padding-top: 35px;
+    padding-bottom: 70px; } }
 #contents #main h2 {
   color: #42b9d0;
   font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  border-bottom: 3px solid #42b9d0; }
 
 #contents #main .news_li {
   font-size: 1.5rem; }
@@ -271,6 +287,10 @@ div {
   #contents #main .news_li li {
     list-style: none; }
 
+@media (min-width: 550px) {
+  #contents #main .news_li li {
+    list-style: none;
+    padding-bottom: 5px; } }
 #contents #sidebar {
   padding-bottom: 20px; }
   #contents #sidebar .pc_sidemenu h3 {
@@ -301,12 +321,26 @@ div {
 @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   #contents #sidebar .pc_sidemenu li {
     background-images: url(../images/news/side_arrow@2x.png); } }
-#contents #main th, #content #main td {
+#contents #main h2.company_title {
+  margin-bottom: 0px; }
+
+@media (min-width: 550px) {
+  #contents #main h2 {
+    font-size: 2rem;
+    padding-bottom: 20px; } }
+#contents #main th, #contents #main td {
   padding: 20px 0;
   color: #626262;
   font-size: 1.4rem; }
 
-#content #main th td ul {
+#contents #main th {
+  padding-right: 20px; }
+
+#contents #main th td ul {
   list-style-type: disc; }
+
+#contents #main table tbody tr td ul li {
+  list-style-type: disc;
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=sample.css.map */

@@ -162,6 +162,10 @@ div {
   padding: 40px 0;
 }
 
+h1 {
+  margin:0;
+  padding: 0;
+}
 
 #sub_cover h2 {
   text-align: center;
@@ -197,6 +201,12 @@ div {
   }
 }
 
+@media (min-width: 550px) {
+#contents #main {
+    padding-right: 20px;
+  }
+}
+
 #contents #main h2 {
   color: #42b9d0;
   font-size: 1.5rem;
@@ -222,6 +232,14 @@ div {
 #contents #main .news_li li {
     list-style: none;
     padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 550px) {
+#contents #main .news_li li span {
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 10px;
   }
 }
 
